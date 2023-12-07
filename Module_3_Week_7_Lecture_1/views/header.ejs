@@ -1,0 +1,13 @@
+<h2>Welcome <%= user %></h2>
+<nav>
+    <ul>
+        <span><a href="/">Home</a></span>
+        <% if (user === undefined) { %>
+            <span><a href="/login">Login</a></span>
+            <span><a href="/register">Register</a></span>
+        <% } else { %>
+            <span><a href="/profile">Profile</a></span>
+            <span><a href="/logout">Logout</a></span>
+        <% } %>
+    </ul>
+</nav>
