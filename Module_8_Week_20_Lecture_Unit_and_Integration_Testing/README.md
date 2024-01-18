@@ -1,11 +1,24 @@
-# W08D01 - Unit & Integration Testing
+# W08D02 - Unit & Integration Testing
 
 ### To Do
-- [x] Tools for testing React
-- [x] Coverage Reports
-- [x] Add Features/Tests to our App
-- [x] `debug()` and `prettyDOM()`
-- [x] Mocking AJAX Requests and Functions
+- [] Types of Testing
+- [] Tools for testing React
+- [] Coverage Reports
+- [] Add Features/Tests to our App
+- [] `debug()` and `prettyDOM()`
+- [] Mocking AJAX Requests and Functions
+
+###
+
+static testing: testing that doesn't require the program to run. e.g. eslint
+dynamic: run the code and see if it works.
+a/b testing: configure the system two ways, and look for differences
+alpha/beta testing: internal to the dev team tests first (alpha), and then when the most important obvious bugs are handled, then pass it off to a round of (volunteers? others?) who bring fresh eyes, and perhaps valued reduced technical experience.
+
+unit testing: testing individual components of and app. a particular function in isolation.
+integration testing: to check out how the app interacts with other aspects of the system and itself.
+
+end-to-end testing: testing the app from start to finish. using the browser itself.
 
 ### Setup & Teardown
 - Tests should represent how a user (or other code) would interact with our application

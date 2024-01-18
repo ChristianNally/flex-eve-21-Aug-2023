@@ -13,7 +13,7 @@ describe('announceResult function', () => {
   });
   
   test('returns "Won" if player is "Axe" and comp is "Tree"', () => {
-    fakeState.playerSelection = 'Axe';
+		fakeState.playerSelection = 'Axe';
     fakeState.compSelection = 'Tree';
     expect(announceResult(fakeState.playerSelection, fakeState.compSelection)).toBe('Won');
   });

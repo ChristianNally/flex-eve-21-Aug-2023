@@ -10,6 +10,7 @@ const Player = (props) => {
     ['Tree', '🌳']
   ];
 
+	// update the game result, given that the computer has selected a new throw
   useEffect(() => {
     if(playerSelection && compSelection){
       const status = announceResult(playerSelection, compSelection);
@@ -17,6 +18,7 @@ const Player = (props) => {
     }
   }, [playerSelection, compSelection, setState]);
 
+	// update things after the user has selected a new throw
   useEffect(() => {
     if (playerSelection) {
       const compSelection = robotChoice(playerSelection, cheating);
