@@ -8,8 +8,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-	resources :authors, only: [:show, :index]
-  resources :books, except: [:edit, :update]
+	resources :authors do
+		resources :books
+	end
+
+	# resources :books
 
 	get 'profile', to: 'users#show'
 
